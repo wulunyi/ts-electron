@@ -2,10 +2,13 @@
 
 import { expect } from 'chai';
 import 'mocha';
-import demoFunUpper from '../src/main';
+
+function demoFunUpper(str: string): string {
+  return str.toUpperCase();
+}
 
 describe('加法函数的测试', () => {
-  it('a upCase should return A', () => {
-    expect(demoFunUpper('b')).to.be.equal('A');
+  it('b upCase should return B', () => {
+    expect(demoFunUpper('b')).to.be.equal('B');
   });
 });

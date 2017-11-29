@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "target": "es5",
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "charset": "utf-8",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "jsxFactory":"React.createElement",
+    "lib": [
+      "es2015.promise",
+      "dom",
+      "es6",
+      "es7"
+    ]
+  }
+}
