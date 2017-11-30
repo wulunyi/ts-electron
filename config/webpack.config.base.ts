@@ -1,5 +1,4 @@
 import * as HappyPack from 'happypack';
-import * as HtmlWebpackPlugin from 'html-webpack-plugin';
 import * as path from 'path';
 import * as webpack from 'webpack';
 
@@ -58,29 +57,22 @@ export default {
   },
 
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.join(ROOTPATH, './template/index.html'),
-      filename: 'index.html'
-    }),
     new HappyPack({
       id: 'lint',
-      loaders: ['tslint-loader'],
+      loaders: ['tslint-loader?fix=true'],
       threadPool: happyThreadPool,
-      cache: true,
       verbose: true
     }),
     new HappyPack({
       id: 'babel',
       loaders: ['babel-loader'],
       threadPool: happyThreadPool,
-      cache: true,
       verbose: true
     }),
     new HappyPack({
       id: 'scss',
       loaders: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       threadPool: happyThreadPool,
-      cache: true,
       verbose: true
     })
   ]

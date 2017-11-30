@@ -8,7 +8,7 @@ var mainWin;
 app.on('ready', function () {
     mainWin = new BrowserWindow({
         height: 700,
-        width: 600
+        width: 400
     });
     var uri = url.format({
         protocol: 'file',

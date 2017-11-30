@@ -28,7 +28,7 @@
 					"check-whitespace"
 			],
 			"ordered-imports": [
-					true,
+					false,
 					{
 							"import-sources-order": "lowercase-last",
 							"named-imports-order": "lowercase-first"

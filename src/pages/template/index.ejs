@@ -9,6 +9,8 @@
 <body>
   <div id="app">
   </div>
-  <script>require('electron-connect').client.create()</script>   
+  <% if (htmlWebpackPlugin.options.isDev) { %>
+    <script>require('electron-connect').client.create()</script>
+  <% } %>
 </body>
 </html>

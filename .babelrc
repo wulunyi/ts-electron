@@ -6,7 +6,8 @@
       "polyfill": true,
       "regenerator": true,
       "moduleName": "babel-runtime"
-    }]
+    }],
+    "lodash"
   ],
   "ignore": [
     "node_modules"
