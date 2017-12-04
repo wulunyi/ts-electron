@@ -65,7 +65,7 @@ export default {
     }),
     new HappyPack({
       id: 'babel',
-      loaders: ['babel-loader'],
+      loaders: ['babel-loader?cacheDirectory'],
       threadPool: happyThreadPool,
       verbose: true
     }),
