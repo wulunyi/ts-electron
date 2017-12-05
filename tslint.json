@@ -4,7 +4,7 @@
 			"array-type": [true, "generic"],
 			"arrow-parens": [true],
 			"class-name": true,
-			"cyclomatic-complexity": [true, 3],
+			"cyclomatic-complexity": [true, 5],
 			"comment-format": [true, "check-space"],
 			"eofline": true,
 			"indent": [true, "spaces"],
